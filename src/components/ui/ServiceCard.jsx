@@ -1,6 +1,8 @@
+     {/*
 import Button from "./Button";
 import { FaWhatsapp } from "react-icons/fa";
 
+*/} 
 export default function ServiceCard({
   imgSrc,
   title,
@@ -21,7 +23,7 @@ export default function ServiceCard({
         <p className="mt-3 text-sm text-para">{description}</p>
       </div>
 
-      <Button title="Book an Appoinment" className="w-full" Icon={FaWhatsapp} />
+     {/* <Button title="Book an Appoinment" className="w-full" Icon={FaWhatsapp} /> */ } 
     </div>
   );
 }
