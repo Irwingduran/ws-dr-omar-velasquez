@@ -1,34 +1,51 @@
 import React from "react";
-
-{/*
 import { Button } from "./ui";
-import { FaWhatsapp } from "react-icons/fa";  
-  */ }
+import { FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Services() {
   return (
-    <div className="mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-center gap-5 px-3 pb-28 pt-28 md:flex-row md:pb-[180px] lg:gap-6 lg:px-0 lg:pt-[140px]">
-      <div className="flex flex-col items-start gap-4">
-        <h5 className="font-poppins text-[22px] font-medium tracking-[0.44px] text-secondary">
-          Servicios
-        </h5>
-        <h1 className="max-w-[485px] font-poppins text-[32px] font-semibold leading-normal text-[#031432]">
-          Lorem ipsum, dolor sit amet consectetur 
-        </h1>
-        <p className="mb-4 max-w-[485px] text-para">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-          egestas viverra turpis habitant eu sociis fermentum felis.
-        </p>
-        {/* <Button title="Book an appointment" Icon={FaWhatsapp} /> */} 
-      </div>
+    <section className="py-20">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* Left Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-start space-y-8"
+        >
+          <div>
+            <h2 className="text-3xl font-bold text-[#031432] leading-tight">
+              Soluciones innovadoras y confiables
+            </h2>
+            <p className="text-secondary text-lg font-medium">Nuestros Servicios</p>
+          </div>
+          <p className="text-gray-600 max-w-md">
+            Ofrecemos soluciones que mejoran tu experiencia y optimizan tus resultados. Descubre lo que
+            podemos hacer por ti y tu negocio.
+          </p>
+          <Button
+            title="Reserva una cita"
+            Icon={FaWhatsapp}
+            className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full flex items-center gap-2"
+          />
+        </motion.div>
 
-      <div className="max-h-[660px] max-w-[622px]">
-        <img
-          className="size-[85%] object-contain md:size-full "
-          src="/img3.jpg"
-          alt="About"
-        />
+        {/* Right Section */}
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="relative overflow-hidden rounded-lg"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src="/img3.jpg"
+            alt="Servicios"
+          />
+          <div className="absolute inset-0"></div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 }

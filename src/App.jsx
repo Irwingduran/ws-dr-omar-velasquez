@@ -6,6 +6,10 @@ import About from "./components/About";
 import Services from "./components/Services";
 import ServiceCards from "./components/ServiceCards";
 import BookAnAppointment from "./components/BookAnAppointment";
+import LocationMap from "./components/LocationMap"
+import DoctorReviews from "./components/DoctorReviews";
+import Footer from "./components/Footer";
+import DoctorArticles from "./components/DoctorArticles";
 
 
 function App() {
@@ -23,9 +27,13 @@ function App() {
         <Services />
         <ServiceCards />
       </div>
-
+      <LocationMap/>
       <BookAnAppointment />
- 
+      <DoctorArticles/>
+      <DoctorReviews/>
+      <div>
+        <Footer/>
+      </div>
     </>
   );
 }

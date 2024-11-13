@@ -1,113 +1,92 @@
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+import { FaHome, FaUser, FaConciergeBell, FaEnvelope } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 bg-[#fff] bg-opacity-80 p-3 backdrop-blur-md">
-      <div className="mx-auto flex max-w-screen-xl items-center justify-between">
-        <a href="/">
-          <h2 className="font-poppins text-[22px] font-medium tracking-[0.44px] text-secondary">
-          Dr. Omar Velásquez Martínez
+    <div className="sticky top-0 z-50 bg-white bg-opacity-90 p-3 shadow-md backdrop-blur-lg">
+      <div className="container mx-auto flex max-w-screen-xl items-center justify-between">
+        {/* Logo */}
+        <a href="/" className="flex items-center space-x-2">
+          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary-start to-primary-end"></div>
+          <h2 className="font-poppins text-lg md:text-[22px] font-semibold tracking-[0.44px] text-secondary truncate">
+            Dr. Omar Velásquez Martínez
           </h2>
         </a>
 
+        {/* Desktop Navigation */}
         <ul className="hidden items-center gap-10 md:flex">
-          <li>
-            <a
-              className="text-primary-start hover:text-primary-start hover:opacity-100"
-              href="#"
-            >
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-para opacity-80 hover:text-primary-start hover:opacity-100"
-              href="#"
-            >
-              Conóceme
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-para opacity-80 hover:text-primary-start hover:opacity-100"
-              href="#"
-            >
-              Servicio
-            </a>
-          </li>
-          <li>
-            <a
-              className="text-para opacity-80 hover:text-primary-start hover:opacity-100"
-              href="#"
-            >
-              Contacto
-            </a>
-          </li>
+          {["Inicio", "Conóceme", "Servicio", "Contacto"].map((item, index) => (
+            <li key={index} className="group relative">
+              <a
+                className="flex items-center gap-2 text-para opacity-80 transition-all duration-200 hover:text-primary-start hover:opacity-100"
+                href="#"
+              >
+                {index === 0 && <FaHome />}
+                {index === 1 && <FaUser />}
+                {index === 2 && <FaConciergeBell />}
+                {index === 3 && <FaEnvelope />}
+                {item}
+              </a>
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-primary-start transition-all duration-300 group-hover:w-full"></div>
+            </li>
+          ))}
         </ul>
 
- {/* Space in Screen */}
-        <div className="hidden md:flex" ></div>
-
-        {/* Mobile Screen */}
-        <div className="relative md:hidden">
-          {isOpen ? (
-            <IoMdClose
-              onClick={() => setIsOpen(false)}
-              className="size-7 cursor-pointer text-primary-end"
-            />
-          ) : (
-            <HiMiniBars3BottomRight
-              onClick={() => setIsOpen(true)}
-              className="size-7 cursor-pointer text-primary-end"
-            />
-          )}
-
-          {isOpen && (
-            <div className="absolute right-2 top-8 min-w-[220px] rounded-2xl border bg-white p-4 shadow-lg">
-              <ul className="mb-8 flex flex-col items-center gap-6">
-                <li>
-                  <a
-                    className="text-primary-start hover:text-primary-start hover:opacity-100"
-                    href="#"
-                  >
-                    Inicio
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-para opacity-80 hover:text-primary-start hover:opacity-100"
-                    href="#"
-                  >
-                    Conóceme
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-para opacity-80 hover:text-primary-start hover:opacity-100"
-                    href="#"
-                  >
-                    Servicio
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="text-para opacity-80 hover:text-primary-start hover:opacity-100"
-                    href="#"
-                  >
-                    Contacto
-                  </a>
-                </li>
-              </ul>
-
-            
-            </div>
-          )}
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-3xl text-primary-end transition-transform hover:scale-110"
+            aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+          >
+            {isOpen ? <IoMdClose /> : <HiMiniBars3BottomRight />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Navigation - Moved outside the button container */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 md:hidden">
+          <div 
+            className="fixed right-0 top-0 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Mobile Menu Header */}
+            <div className="p-4 border-b flex justify-end">
+              <button
+                onClick={() => setIsOpen(false)}
+                className="text-3xl text-primary-end hover:scale-110 transition-transform"
+                aria-label="Cerrar menú"
+              >
+                <IoMdClose />
+              </button>
+            </div>
+            
+            {/* Mobile Menu Items */}
+            <ul className="flex flex-col p-4 gap-6 bg-white">
+              {["Inicio", "Conóceme", "Servicio", "Contacto"].map((item, index) => (
+                <li key={index}>
+                  <a
+                    className="flex items-center gap-3 text-para opacity-80 transition-all duration-200 hover:text-primary-start hover:opacity-100 py-2"
+                    href="#"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {index === 0 && <FaHome className="text-xl" />}
+                    {index === 1 && <FaUser className="text-xl" />}
+                    {index === 2 && <FaConciergeBell className="text-xl" />}
+                    {index === 3 && <FaEnvelope className="text-xl" />}
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
