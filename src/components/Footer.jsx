@@ -58,7 +58,7 @@ export default function Footer() {
 
       {/* Divider and Copyright */}
       <div className="mt-14 border-t border-white pt-4 text-center text-white">
-        <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Delta Agency. Todos los derechos reservados.</p>
       </div>
     </footer>
   );
