@@ -1,3 +1,5 @@
+import img from '../assets/img2.jpg';
+
 export default function Hero() {
   return (
     <div className="relative mx-auto flex max-w-screen-xl flex-col-reverse items-center justify-between gap-6 px-6 pb-12 pt-16 md:flex-row lg:gap-12 bg-white">
@@ -13,7 +15,7 @@ export default function Hero() {
         </h1>
         <p className="max-w-[480px] text-gray-700 md:text-lg">
           Cirugía General y Digestiva, Cirugía Laparoscópica, Endoscópica y de Mínima Invasión, Alta especialidad en Endoscopia Gastrointestinal
-        </p>
+        </p> 
         <button className="mt-4 rounded-full bg-blue-600 px-5 py-2 text-white hover:bg-blue-700 transition-all">
           Más información
         </button>
@@ -23,7 +25,7 @@ export default function Hero() {
       <div className="relative z-10 flex justify-center md:max-w-lg">
         <img
           className="max-h-[506px] w-full rounded-lg  object-cover transform hover:scale-105 transition-transform"
-          src="/img2.jpg"
+          src={img}
           alt="Hero"
         />
       </div>

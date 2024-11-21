@@ -10,8 +10,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <h2 className="text-3xl font-bold mb-4">Dr. Omar Velásquez Martínez</h2>
           <p className="text-white leading-relaxed">
-            Ofrecemos soluciones confiables y de alta calidad para cumplir con tus necesidades.
-            Tu satisfacción es nuestra prioridad.
+          Con experiencia y dedicación, para las mejores soluciones médicas confiables para cuidar tu salud.
           </p>
         </div>
 
@@ -28,20 +27,17 @@ export default function Footer() {
 
         {/* Contacto */}
         <div>
-          <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Contáctanos</h3>
+          <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Contacto</h3>
           <ul className="space-y-1 text-white">
             <li>Email: <a href="mailto:contacto@empresa.com" className="hover:text-primary-light transition-colors">contacto@empresa.com</a></li>
             <li>Teléfono: <a href="tel:+521234567890" className="hover:text-primary-light transition-colors">+52 123 456 7890</a></li>
           </ul>
-          <button className="mt-6 flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-white hover:bg-primary-dark transition-all">
-            <FaWhatsapp />
-            Envíanos un mensaje
-          </button>
+          
         </div>
 
         {/* Redes sociales */}
         <div>
-          <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Síguenos</h3>
+          <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Sígueme</h3>
           <div className="flex gap-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
               <FaFacebookF size={24} />
@@ -58,7 +54,7 @@ export default function Footer() {
 
       {/* Divider and Copyright */}
       <div className="mt-14 border-t border-white pt-4 text-center text-white">
-        <p>&copy; 2024 Delta Agency. Todos los derechos reservados.</p>
+        <p>Todos los derechos reservados. <br /> &copy; 2025 <a className="hover:text-yellow-500" href="https://delta-digital.com.mx/">Delta Agency.</a> </p>
       </div>
     </footer>
   );

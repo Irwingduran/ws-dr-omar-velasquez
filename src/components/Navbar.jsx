@@ -3,15 +3,20 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { FaHome, FaUser, FaConciergeBell, FaEnvelope } from "react-icons/fa";
 
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 bg-white bg-opacity-90 p-3 shadow-md backdrop-blur-lg">
+    <div className="sticky top-0 z-50 bg-white bg-opacity-90 p-3 shadow-md backdrop-blur-lg px-4 py-6">
       <div className="container mx-auto flex max-w-screen-xl items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center space-x-2">
-          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary-start to-primary-end"></div>
+        <a href="#" className="flex items-center space-x-2">
+          <img
+            src="/logo.jpg"
+            alt="Logo Dr. Omar Velásquez Martínez"
+            className="h-10 w-10 object-cover rounded-full"
+          />
           <h2 className="font-poppins text-lg md:text-[22px] font-semibold tracking-[0.44px] text-secondary truncate">
             Dr. Omar Velásquez Martínez
           </h2>
@@ -48,14 +53,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation - Moved outside the button container */}
+      {/* Mobile Navigation */}
       {isOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-40 md:hidden">
-          <div 
+          <div
             className="fixed right-0 top-0 h-full w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Mobile Menu Header */}
             <div className="p-4 border-b flex justify-end">
               <button
                 onClick={() => setIsOpen(false)}
@@ -65,8 +69,6 @@ export default function Navbar() {
                 <IoMdClose />
               </button>
             </div>
-            
-            {/* Mobile Menu Items */}
             <ul className="flex flex-col p-4 gap-6 bg-white">
               {["Inicio", "Conóceme", "Servicio", "Contacto"].map((item, index) => (
                 <li key={index}>
