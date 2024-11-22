@@ -9,7 +9,7 @@ const LocationMap = () => {
           {/* Primera ubicación */}
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.392346528213!2d-122.419415684457!3d37.7749295797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858159af8f0a7d%3A0xe1bdfdab4b9e3ed2!2sGolden+Gate+Bridge!5e0!3m2!1sen!2sus!4v1615853952384!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.631212583267!2d-99.6167824251421!3d19.25489774633262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bc7db14b05f%3A0x6b8cebda9d78703d!2sCentro%20M%C3%A9dico%20Toluca.%20Servicios%20Especializados.!5e0!3m2!1ses!2smx!4v1732298205365!5m2!1ses!2smx"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -23,7 +23,7 @@ const LocationMap = () => {
           {/* Segunda ubicación */}
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.7741795345615!2d-89.21819168574645!3d13.705073702578443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633079b50f9dd7%3A0xf13a04c045a6d42e!2sMonumento%20al%20Divino%20Salvador%20del%20Mundo!5e0!3m2!1ses!2ssv!4v1635737639758!5m2!1ses!2ssv"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2698642016144!2d-99.59634472161258!3d18.96368560966206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd95a0147cef9d%3A0x67309cccb981fb76!2sLaboratorios%20los%20Angeles!5e0!3m2!1ses!2smx!4v1732298345406!5m2!1ses!2smx"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -40,3 +40,6 @@ const LocationMap = () => {
 };
 
 export default LocationMap;
+
+
+
