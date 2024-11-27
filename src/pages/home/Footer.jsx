@@ -3,7 +3,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-tl from-primary-start to-primary-end p-8 text-white  py-14">
+    <footer className=" bg-gradient-to-r from-teal-500 to-teal-400 p-8 text-white  py-14">
       <div className="container mx-auto grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-4 lg:px-0">
         
         {/* Logo y descripción */}

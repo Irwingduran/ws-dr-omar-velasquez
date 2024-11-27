@@ -19,13 +19,13 @@ function Item({
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 }) {
   return (
-    <div className="flex w-max translate-y-[50%] items-center gap-3 rounded-[12px] bg-gradient-to-t from-[#65A8FB] to-[#1678F2] px-[18px] py-2 text-white md:max-w-[295px]">
+    <div className="flex w-max translate-y-[50%] items-center gap-3 rounded-[12px] bg-teal-500 px-[18px] py-2 text-white md:max-w-[295px]">
       <div>
         <Icon className="size-[38px]" />
       </div>
       <div>
         <h3 className="font-poppins text-lg font-medium">{title}</h3>
-        <p className="font-sora text-xs">{description}</p>
+ 
       </div>
     </div>
   );

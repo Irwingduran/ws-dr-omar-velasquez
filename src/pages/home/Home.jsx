@@ -12,6 +12,7 @@ import Footer from "./Footer";
 import DoctorArticles from "./DoctorArticles";
 import AdditionalServices from "./AdditionalServices";
 
+
 function Home() {
   return (
     <>
@@ -33,14 +34,23 @@ function Home() {
       <div className="bg-white min-h-screen">
         {/* Secciones de servicios con fondo */}
         <div className="container mx-auto px-4 py-6">
+         
           <Services />
+        
+
+        </div>
+      </div>
+
+      <div className=" min-h-screen">
+        {/* Secciones de servicios sin fondo */}
+        <div className="container mx-auto px-4 py-6">
           <ServiceCards />
-          <AdditionalServices/>
         </div>
       </div>
 
       <div className="bg-white container mx-auto px-4 py-6">
         {/* Mapas, citas y más contenido */}
+        <AdditionalServices/>
         <BookAnAppointment />
         <DoctorArticles />
         <LocationMap />

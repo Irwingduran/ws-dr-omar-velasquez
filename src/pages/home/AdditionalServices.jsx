@@ -19,7 +19,7 @@ export default function AdditionalServices() {
       
 
   return (
-    <section className="bg-white ">
+    <section className="bg-white w-full">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         {/* Título y descripción */}
         <div className="text-center mb-8">
@@ -36,7 +36,7 @@ export default function AdditionalServices() {
               key={index}
               className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg shadow hover:shadow-md transition-shadow duration-300"
             >
-              <span className="w-3 h-3 bg-blue-500 rounded-full flex-shrink-0"></span>
+              <span className="w-3 h-3 bg-teal-500 rounded-full flex-shrink-0"></span>
               <p className="text-gray-700">{service}</p>
             </li>
           ))}

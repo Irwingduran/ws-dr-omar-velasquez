@@ -13,28 +13,31 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           {/* Texto */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="md:col-span-6 space-y-6"
-          >
-            <h1 className="text-4xl font-bold text-[#031432] leading-tight">
-              Servicios médicos personalizados
-            </h1>
-            <p className="text-lg text-gray-700">
-              Nuestro equipo ofrece atención de alta calidad con soluciones
-              innovadoras para satisfacer tus necesidades. Desde diagnósticos
-              hasta tratamientos avanzados, estamos aquí para ti.
-            </p>
-            <div>
-            <Button
-            title="Reserva una cita"
-            Icon={FaWhatsapp}
-            className="bg-white text-white px-6 py-3 rounded-full flex items-center gap-2"
-          />
+  initial={{ opacity: 0, x: -50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.5 }}
+  className="md:col-span-6 space-y-6"
+>
+  <h1 className="text-4xl font-bold text-[#031432] leading-tight">
+    Servicios especializados en salud digestiva
+  </h1>
+  <p className="text-lg text-gray-700">
+    Con una atención médica integral y personalizada en cirugía digestiva y endoscopia gastrointestinal. Desde diagnósticos hasta tratamientos avanzados.
+  </p>
+  <ul className="text-lg text-gray-700 space-y-2">
+    <li>✔ Cirugía laparoscópica y mínimamente invasiva</li>
+    <li>✔ Colonoscopia y endoscopia digestiva alta</li>
+    <li>✔ Diagnóstico y tratamiento de enfermedades gastrointestinales</li>
+  </ul>
+  <div>
+    <Button
+      title="Reserva una cita"
+      Icon={FaWhatsapp}
+      className="bg-gradient-to-r from-teal-500 to-teal-400 text-white px-6 py-3 rounded-full flex items-center gap-2"
+    />
+  </div>
+</motion.div>
 
-            </div>
-          </motion.div>
 
           {/* Imagen */}
           <motion.div

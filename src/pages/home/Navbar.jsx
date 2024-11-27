@@ -8,16 +8,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-50 bg-white bg-opacity-90 p-3 shadow-md backdrop-blur-lg px-4 py-6">
+    <div className="sticky top-0 z-50 bg-white bg-opacity-90 p-3 shadow-md backdrop-blur-lg px-16 py-6">
       <div className="container mx-auto flex max-w-screen-xl items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center space-x-2">
+        <a href="/" className="flex items-center space-x-2">
           <img
             src="/logo.jpg"
             alt="Logo Dr. Omar Velásquez Martínez"
             className="h-10 w-10 object-cover rounded-full"
           />
-          <h2 className="font-poppins text-lg md:text-[22px] font-semibold tracking-[0.44px] text-secondary truncate">
+          <h2 className="font-poppins text-lg md:text-[22px] font-semibold tracking-[0.44px] text-teal-500 truncate">
             Dr. Omar Velásquez Martínez
           </h2>
         </a>
@@ -27,7 +27,7 @@ export default function Navbar() {
           {["Inicio", "Conóceme", "Servicio", "Contacto"].map((item, index) => (
             <li key={index} className="group relative">
               <a
-                className="flex items-center gap-2 text-para opacity-80 transition-all duration-200 hover:text-primary-start hover:opacity-100"
+                className="flex items-center gap-2 text-para opacity-80 transition-all duration-200 hover:text-teal-500 hover:opacity-100"
                 href="#"
               >
                 {index === 0 && <FaHome />}
@@ -36,7 +36,7 @@ export default function Navbar() {
                 {index === 3 && <FaEnvelope />}
                 {item}
               </a>
-              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-primary-start transition-all duration-300 group-hover:w-full"></div>
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-teal-500 transition-all duration-300 group-hover:w-full"></div>
             </li>
           ))}
         </ul>
@@ -45,7 +45,7 @@ export default function Navbar() {
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl text-primary-end transition-transform hover:scale-110"
+            className="text-3xl text-black transition-transform hover:scale-110"
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {isOpen ? <IoMdClose /> : <HiMiniBars3BottomRight />}
@@ -63,7 +63,7 @@ export default function Navbar() {
             <div className="p-4 border-b flex justify-end">
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-3xl text-primary-end hover:scale-110 transition-transform"
+                className="text-3xl text-black hover:scale-110 transition-transform"
                 aria-label="Cerrar menú"
               >
                 <IoMdClose />

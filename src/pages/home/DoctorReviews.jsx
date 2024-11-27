@@ -162,8 +162,8 @@ const DoctorReviews = ({ autoPlayInterval = 5000 }) => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className={`w-3 h-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+              className={`w-3 h-3 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 ${
+                index === currentIndex ? "bg-teal-500" : "bg-gray-300"
               }`}
               role="tab"
               aria-selected={index === currentIndex}

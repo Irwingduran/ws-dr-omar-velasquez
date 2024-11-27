@@ -11,7 +11,7 @@ const ServiceCard = ({ title, imgSrc, description, link }) => {
         <div className="p-4">
           <h3 className="text-lg font-medium mb-2">{title}</h3>
           <p className="text-gray-600">{description}</p>
-          <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors duration-300">
+          <button className="mt-4 px-4 py-2 bg-gradient-to-r from-teal-500 to-teal-400 text-white rounded-md transition-colors duration-300">
             Más información
           </button>
         </div>
