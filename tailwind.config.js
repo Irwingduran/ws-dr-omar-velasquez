@@ -4,16 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          start: "#3A8EF6",
-          end: "#6F3AFA ",
-        },
-        secondary: "#00BFA5",
-        para: "#6c87a3",
-      },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        sora: ["Sora", "sans-serif"],
+        hoverColor: "#FFC000",
+        brightColor: "#000",
+        backgroundColor: "#36ae9a",
       },
     },
   },
