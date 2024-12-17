@@ -11,6 +11,7 @@ import DoctorReviews from "./DoctorReviews";
 import Footer from "./Footer";
 import DoctorArticles from "./DoctorArticles";
 import AdditionalServices from "./AdditionalServices";
+import WhatsAppButton from "./WhatsAppButton";
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
       <div className="bg-white min-h-screen">
         {/* Contenedor principal con margen */}
         <div className="container mx-auto px-4 py-6">
+          <WhatsAppButton/>
           {/* Secciones con fondo claro */}
           <Hero />
           <ListItems />

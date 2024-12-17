@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../home/Navbar";
 import Footer from "../home/Footer";
+import WhatsAppButton from "./WhatsAppButton";
 import { FaCheckCircle, FaQuestionCircle, FaStar, FaHeartbeat, FaUserMd } from "react-icons/fa";
 import imgLocal from "../../assets/IMG_3498.jpg";
 
@@ -47,6 +48,7 @@ const ServiceDetailsAlternative = () => {
   return (
     <div className="bg-white">
       {/* Hero Section */}
+      <WhatsAppButton/>
       <div className="relative bg-gradient-to-r from-teal-500 to-teal-300 text-white">
         <div className="max-w-screen-xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
