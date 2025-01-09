@@ -39,6 +39,11 @@ const ServiceDetailsAlternative = () => {
         author: "María López",
         rating: 5,
       },
+      {
+        text: "Sin duda, el mejor médico que he tenido. Su enfoque en el paciente y su amplio conocimiento son realmente impresionantes. Estoy muy satisfecha con los resultados y lo recomendaría a cualquiera.",
+        author: "Lucía Fernández",
+        rating: 5,
+      },
     ],
   };
 
