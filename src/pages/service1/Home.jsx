@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../home/Navbar";
 import Footer from "../home/Footer";
 import { FaCheckCircle, FaQuestionCircle, FaStar, FaHeartbeat, FaUserMd } from "react-icons/fa";
-import imgLocal from "../../assets/IMG_3498.jpg";
 
 const ServiceDetailsAlternative = () => {
   const service = {
@@ -41,7 +40,6 @@ const ServiceDetailsAlternative = () => {
         rating: 5,
       },
     ],
-    image: imgLocal, // Usamos la imagen local
   };
 
   return (
@@ -58,11 +56,16 @@ const ServiceDetailsAlternative = () => {
             </div>
           </div>
           <div>
-            <img
-              src={service.image} // Imagen local
-              alt={service.title}
-              className="rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300"
-            />
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F417176356992889%2F&show_text=false&width=267&t=0"
+              width="267"
+              height="476"
+              style={{ border: "none", overflow: "hidden" }}
+              scrolling="no"
+              frameBorder="0"
+              allowFullScreen={true}
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
           </div>
         </div>
       </div>
