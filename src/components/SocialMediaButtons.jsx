@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const SocialMediaButtons = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   const socialLinks = [
     {
       name: 'WhatsApp',
-      url: 'https://wa.me/521XXXXXXXXXX',
+      url: 'https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0',
       bgColor: 'bg-green-500',
       hoverColor: 'hover:bg-green-600',
       icon: (
@@ -19,7 +15,7 @@ const SocialMediaButtons = () => {
     },
     {
         name: 'Instagram',
-        url: 'https://instagram.com/tuusuario',
+        url: 'https://www.instagram.com/endoscopiaentoluca',
         bgColor: 'bg-pink-500',
         hoverColor: 'hover:bg-pink-600',
         icon: (
@@ -28,7 +24,7 @@ const SocialMediaButtons = () => {
     },
     {
       name: 'Facebook',
-      url: 'https://facebook.com/tuusuario',
+      url: 'https://www.facebook.com/EndoscopiaenToluca',
       bgColor: 'bg-blue-600',
       hoverColor: 'hover:bg-blue-700',
       icon: (
@@ -37,47 +33,25 @@ const SocialMediaButtons = () => {
     },
     {
       name: 'TikTok',
-      url: 'https://tiktok.com/@tuusuario',
+      url: 'https://www.tiktok.com/@omar.gastro?_t=8k4h6MdrJ70&_r=1',
       bgColor: 'bg-gray-800',
       hoverColor: 'hover:bg-gray-900',
       icon: (
         <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" />
       )
     },
-    {
-        name: 'Twitter',
-        url: 'https://twitter.com/tuusuario',
-        bgColor: 'bg-black',
-        hoverColor: 'hover:bg-gray-900',
-        icon: (
-          <path d="M14.258 10.152L23.176 0h-2.113l-7.747 8.813L7.133 0H0l9.352 13.328L0 23.973h2.113l8.176-9.309 6.531 9.309h7.133zm-2.895 3.293l-.949-1.328L2.875 1.56h3.246l6.086 8.516.945 1.328 7.91 11.067h-3.246z"/>
-        )
-      },
   ];
 
   return (
     <div className="fixed right-4 bottom-4 z-50 flex flex-col items-end gap-2">
-      {/* Botón flotante principal */}
-      <button
-        onClick={toggleMenu}
-        className="w-14 h-14 flex items-center justify-center bg-teal-400 hover:bg-teal-200 text-white rounded-full shadow-lg"
-      >
-        {isOpen ? '✖️' : '➕'}
-      </button>
-
-      {/* Botones de redes sociales */}
-      <div
-        className={`flex flex-col gap-2 transition-all duration-300 ${
-          isOpen ? 'opacity-100 max-h-60' : 'opacity-0 max-h-0'
-        } overflow-hidden`}
-      >
+   
         {socialLinks.map((social) => (
           <a
             key={social.name}
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className={`flex items-center justify-center w-12 h-12 ${social.bgColor} ${social.hoverColor} rounded-full shadow-lg transition-transform`}
+            className={`flex items-center justify-center w-10 h-10 ${social.bgColor} ${social.hoverColor} rounded-full shadow-lg transition-transform`}
             aria-label={`Visitar ${social.name}`}
           >
             <svg
@@ -91,7 +65,7 @@ const SocialMediaButtons = () => {
           </a>
         ))}
       </div>
-    </div>
+
   );
 };
 

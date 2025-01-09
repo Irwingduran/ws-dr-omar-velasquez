@@ -10,10 +10,6 @@ export default function BookAnAppointment() {
           <h3 className="text-2xl font-bold leading-snug md:text-3xl">
             ¡Agenda tu cita ahora mismo!
           </h3>
-          <p className="text-sm md:text-base max-w-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
-            viverra turpis habitant eu sociis fermentum felis.
-          </p>
           <button className="flex items-center gap-3 bg-white text-teal-800 rounded-full px-5 py-2 text-sm font-medium shadow-lg hover:scale-105 transition">
             <FaWhatsapp className="text-lg" />
             Agendar una cita

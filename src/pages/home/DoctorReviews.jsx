@@ -94,7 +94,7 @@ const DoctorReviews = ({ autoPlayInterval = 5000 }) => {
   }, []);
 
   return (
-    <section className="bg-gray-50 py-16 sm:py-8">
+    <section className="bg-white py-16 sm:py-8">
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8 sm:px-4">
         <div className="text-center mb-12 sm:mb-8">
           <h2 className="text-4xl font-bold text-[#031432] sm:text-2xl">

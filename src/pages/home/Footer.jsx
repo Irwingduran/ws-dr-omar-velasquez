@@ -29,8 +29,9 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Contacto</h3>
           <ul className="space-y-1 text-white">
-            <li>Email: <a href="mailto:contacto@empresa.com" className="hover:text-primary-light transition-colors">contacto@empresa.com</a></li>
-            <li>Teléfono: <a href="tel:+521234567890" className="hover:text-primary-light transition-colors">+52 123 456 7890</a></li>
+            <li>Email: <a href="mailto:drovm@hotmail.com" className="hover:text-primary-light transition-colors">drovm@hotmail.com</a></li>
+            <li>Urgencias: <a href="tel:+528180109367" className="hover:text-primary-light transition-colors">+52 8180109367</a></li>
+            <li>Citas Centro Medico Toluca: <a href="tel:+527292802874" className="hover:text-primary-light transition-colors">+52 7292802874</a></li>
           </ul>
           
         </div>

@@ -71,7 +71,7 @@ const ServiceDetailsAlternative = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-8">
         {/* Features Column */}
         <div className="md:col-span-1 space-y-6">
-          <h3 className="text-2xl font-bold text-black border-b-2 border-primary-start pb-2">
+          <h3 className="text-2xl font-bold text-black border-b-2 border-teal-500 pb-2">
             Características
           </h3>
           <ul className="space-y-4">
@@ -89,14 +89,14 @@ const ServiceDetailsAlternative = () => {
 
         {/* Benefits Column */}
         <div className="md:col-span-1 space-y-6">
-          <h3 className="text-2xl font-bold text-black border-b-2 border-primary-start pb-2">
+          <h3 className="text-2xl font-bold text-black border-b-2 border-teal-500 pb-2">
             Beneficios
           </h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {service.benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-blue-500"
+                className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow border-l-4 border-teal-500"
               >
                 <FaStar className="text-yellow-500 mb-2" />
                 <p className="text-gray-600 font-medium">{benefit}</p>
@@ -107,7 +107,7 @@ const ServiceDetailsAlternative = () => {
 
         {/* FAQs Column */}
         <div className="md:col-span-1 space-y-6">
-          <h3 className="text-2xl font-bold text-black border-b-2 border-primary-start pb-2">
+          <h3 className="text-2xl font-bold text-black border-b-2 border-teal-500 pb-2">
             Preguntas Frecuentes
           </h3>
           <div className="space-y-4">
@@ -117,7 +117,7 @@ const ServiceDetailsAlternative = () => {
                 className="bg-gray-100 p-4 rounded-lg hover:bg-blue-50 transition-colors"
               >
                 <h4 className="flex items-center text-lg font-semibold text-black mb-2">
-                  <FaQuestionCircle className="mr-2 text-primary-start" />
+                  <FaQuestionCircle className="mr-2 text-teal-500" />
                   {faq.question}
                 </h4>
                 <p className="text-gray-600">{faq.answer}</p>
