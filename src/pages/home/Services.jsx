@@ -29,13 +29,14 @@ export default function Services() {
     <li>✔ Colonoscopia y endoscopia digestiva alta</li>
     <li>✔ Diagnóstico y tratamiento de enfermedades gastrointestinales</li>
   </ul>
-  <div>
+  <a href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+  target="_blank">
     <Button
       title="Reserva una cita"
       Icon={FaWhatsapp}
-      className="bg-gradient-to-r from-teal-500 to-teal-400 text-white px-6 py-3 rounded-full flex items-center gap-2"
+      className="bg-gradient-to-r from-teal-500 to-teal-400 text-white px-8 py-3 rounded-full flex items-center gap-2"
     />
-  </div>
+  </a>
 </motion.div>
 
 

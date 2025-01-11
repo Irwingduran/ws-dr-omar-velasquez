@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
           <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Enlaces Rápidos</h3>
           <ul className="space-y-2 text-white">
             <li><a href="#services" className="hover:text-primary-light transition-colors">Servicios</a></li>
-            <li><a href="#about" className="hover:text-primary-light transition-colors">Sobre Nosotros</a></li>
+            <li><a href="#about" className="hover:text-primary-light transition-colors">Sobre Mí</a></li>
             <li><a href="#contact" className="hover:text-primary-light transition-colors">Contacto</a></li>
             <li><a href="#blog" className="hover:text-primary-light transition-colors">Blog</a></li>
           </ul>
@@ -40,13 +40,13 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 text-xl font-semibold border-b border-white pb-2">Sígueme</h3>
           <div className="flex gap-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
+            <a href="https://www.facebook.com/EndoscopiaenToluca" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
               <FaFacebookF size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
-              <FaTwitter size={24} />
+            <a href="https://www.tiktok.com/@omar.gastro?_t=8k4h6MdrJ70&_r=1" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
+              <FaTiktok size={24} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
+            <a href="https://www.instagram.com/endoscopiaentoluca" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
               <FaInstagram size={24} />
             </a>
           </div>

@@ -26,14 +26,14 @@ function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-6" id="about">
         {/* Sección de información */}
         <About />
       </div>
 
       <div className="bg-white min-h-screen">
         {/* Secciones de servicios con fondo */}
-        <div className="container mx-auto px-4 py-6">
+        <div className="container mx-auto px-4 py-6" id="services">
          
           <Services />
         
@@ -57,8 +57,9 @@ function Home() {
         <DoctorReviews />
         
       </div>
-
+      <div id="contact">
       <Footer />
+      </div>
     </>
   );
 }

@@ -64,7 +64,7 @@ export default function About() {
             >
               <FaCheckCircle className="text-teal-500 text-3xl" />
               <p className="text-gray-700 text-lg">
-                Especialista en Cirugía Laparoscópica y Endoscópica.
+                Especialista en Cirugía Laparoscópica y Endoscópica
               </p>
             </motion.div>
 
@@ -78,7 +78,7 @@ export default function About() {
             >
               <FaCheckCircle className="text-teal-500 text-3xl" />
               <p className="text-gray-700 text-lg">
-                Certificado por el Consejo Mexicano de Gastroenterología en Endoscopia Gastrointestinal.
+                Certificado por el Consejo Mexicano de Gastroenterología
               </p>
             </motion.div>
 
@@ -92,7 +92,7 @@ export default function About() {
             >
               <FaCheckCircle className="text-teal-500 text-3xl" />
               <p className="text-gray-700 text-lg">
-                Certificado por el Consejo Mexicano de Cirugía General.
+                Certificado por el Consejo Mexicano de Cirugía General
               </p>
             </motion.div>
           </div>
