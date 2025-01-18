@@ -49,7 +49,7 @@ export default function Navbar() {
               className="flex items-center gap-2 text-gray-700 hover:text-teal-500 font-medium transition-all"
             >
               <FaConciergeBell />
-              Servicio
+              Servicios
             </a>
           </li>
           <li>
@@ -128,7 +128,7 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                 >
                   <FaConciergeBell className="text-xl" />
-                  Servicio
+                  Servicios
                 </a>
               </li>
               <li>
