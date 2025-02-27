@@ -11,7 +11,7 @@ import DoctorReviews from "./DoctorReviews";
 import Footer from "./Footer";
 import DoctorArticles from "./DoctorArticles";
 import AdditionalServices from "./AdditionalServices";
-
+import Mockup from "./Mockup"
 
 function Home() {
   return (
@@ -51,9 +51,10 @@ function Home() {
       <div className="bg-white container mx-auto px-4 py-6">
         {/* Mapas, citas y más contenido */}
         <AdditionalServices/>
-        <BookAnAppointment />
+        <Mockup/>
         <DoctorArticles />
         <LocationMap />
+        <BookAnAppointment />
         <DoctorReviews />
         
       </div>
