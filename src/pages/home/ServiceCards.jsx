@@ -32,13 +32,13 @@ export default function ServiceCards() {
       title: "Laparoscopia Digestiva",
       imgSrc: "img/service3.png",
       description: "Cirugía de mínima invasión para tratar problemas digestivos.",
-      link: "/Service1",
+      link: "/Service2",
     },
     {
       title: "Colonoscopia",
       imgSrc: "img/service4.jpeg",
       description: "Prueba de diagnóstico para examinar el colon y recto.",
-      link: "/Service1",
+      link: "/Service3",
     },
   ];
 

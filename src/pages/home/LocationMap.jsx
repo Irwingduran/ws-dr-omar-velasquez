@@ -8,7 +8,7 @@ const LocationMap = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Primera ubicación */}
           <div>
-              <h3 className="text-xl font-semibold mb-4">Toluca</h3>
+            <h3 className="text-xl font-semibold mb-4">Toluca</h3>
             <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.631212583267!2d-99.6167824251421!3d19.25489774633262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bc7db14b05f%3A0x6b8cebda9d78703d!2sCentro%20M%C3%A9dico%20Toluca.%20Servicios%20Especializados.!5e0!3m2!1ses!2smx!4v1732298205365!5m2!1ses!2smx"
@@ -39,6 +39,22 @@ const LocationMap = () => {
               <p className="mt-4 text-gray-600">Laboratorios los Angeles</p>
             </div>
           </div>
+        </div>
+
+        {/* Sección de invitación a dejar un comentario */}
+        <div className="mt-12 text-center">
+          <h3 className="text-2xl font-semibold text-gray-800">¿Te atendimos bien? ¡Déjanos tu comentario en Google!</h3>
+          <p className="text-gray-600 mt-2">
+            Tu opinión es muy valiosa para nosotros y ayuda a que más personas conozcan nuestros servicios.
+          </p>
+          <a
+            href="https://g.page/r/CODIGO_GOOGLE_REVIEW" // Reemplaza con el enlace real a las reseñas del perfil de Google
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block  bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-teal-600 transition duration-300"
+          >
+            Dejar un comentario
+          </a>
         </div>
       </div>
     </section>
