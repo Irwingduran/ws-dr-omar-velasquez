@@ -5,27 +5,29 @@ import { FaCheckCircle, FaQuestionCircle, FaStar, FaHeartbeat, FaUserMd } from "
 
 const ServiceDetailsAlternative = () => {
   const service = {
-    title: "Consulta Médica Personalizada",
+    title: "Laparoscopia Digestiva",
     description:
-      "Nuestra consulta médica se centra en brindar una atención personalizada, adaptada a tus necesidades individuales.",
+      "La laparoscopia digestiva es un procedimiento mínimamente invasivo que permite diagnosticar y tratar diversas afecciones del sistema digestivo con una recuperación más rápida y menos dolor.",
     features: [
-      "Evaluaciones médicas detalladas",
-      "Seguimiento continuo del paciente",
-      "Diagnóstico preciso y profesional",
+      "Diagnóstico preciso de enfermedades digestivas",
+      "Cirugía mínimamente invasiva",
+      "Recuperación más rápida y menos dolorosa",
+      "Reducción del riesgo de complicaciones",
     ],
     benefits: [
-      "Mejor calidad de vida",
-      "Atención médica más accesible",
-      "Soluciones adaptadas",
+      "Menor tiempo de hospitalización",
+      "Cicatrices más pequeñas y menos visibles",
+      "Retorno más rápido a las actividades cotidianas",
+      "Técnica avanzada y segura",
     ],
     faqs: [
       {
-        question: "¿Qué incluye la consulta médica?",
-        answer: "Incluye una revisión completa y un plan de tratamiento personalizado.",
+        question: "¿Qué es la laparoscopia digestiva?",
+        answer: "Es una técnica quirúrgica que utiliza una cámara e instrumentos especiales para diagnosticar y tratar problemas en el sistema digestivo a través de pequeñas incisiones.",
       },
       {
         question: "¿Necesito agendar cita previa?",
-        answer: "Sí, recomendamos agendar con anticipación para garantizar disponibilidad.",
+        answer: "Sí, es necesario agendar una consulta para evaluar tu caso y programar el procedimiento.",
       },
     ],
   };
@@ -127,7 +129,7 @@ const ServiceDetailsAlternative = () => {
             No esperes más, tu salud es lo más importante.
           </p>
           <a
-            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" // Cambia este enlace por la ruta correcta
+            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
             className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors"
           >
             Agendar una cita

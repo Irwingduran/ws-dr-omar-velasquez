@@ -5,27 +5,29 @@ import { FaCheckCircle, FaQuestionCircle, FaStar, FaHeartbeat, FaUserMd } from "
 
 const ServiceDetailsAlternative = () => {
   const service = {
-    title: "Consulta Médica Personalizada",
+    title: "Colonoscopia de Alta Calidad",
     description:
-      "Nuestra consulta médica se centra en brindar una atención personalizada, adaptada a tus necesidades individuales.",
+      "Realizamos colonoscopias con tecnología avanzada y un enfoque en la comodidad y seguridad del paciente. Descubre la importancia de este procedimiento para la prevención y detección temprana de enfermedades.",
     features: [
-      "Evaluaciones médicas detalladas",
-      "Seguimiento continuo del paciente",
-      "Diagnóstico preciso y profesional",
+      "Tecnología de última generación",
+      "Equipo médico especializado",
+      "Procedimiento seguro y eficaz",
+      "Resultados precisos y confiables",
     ],
     benefits: [
-      "Mejor calidad de vida",
-      "Atención médica más accesible",
-      "Soluciones adaptadas",
+      "Detección temprana de cáncer de colon",
+      "Prevención de enfermedades digestivas",
+      "Procedimiento ambulatorio y rápido",
+      "Atención personalizada y humana",
     ],
     faqs: [
       {
-        question: "¿Qué incluye la consulta médica?",
-        answer: "Incluye una revisión completa y un plan de tratamiento personalizado.",
+        question: "¿Qué es una colonoscopia?",
+        answer: "Es un procedimiento médico que permite visualizar el interior del colon y el recto para detectar anomalías como pólipos, inflamaciones o cáncer.",
       },
       {
-        question: "¿Necesito agendar cita previa?",
-        answer: "Sí, recomendamos agendar con anticipación para garantizar disponibilidad.",
+        question: "¿Necesito prepararme para una colonoscopia?",
+        answer: "Sí, es necesario seguir una dieta especial y un protocolo de limpieza intestinal antes del procedimiento. Te proporcionaremos instrucciones detalladas.",
       },
     ],
   };
@@ -121,13 +123,13 @@ const ServiceDetailsAlternative = () => {
       <div className="bg-white py-12">
         <div className="max-w-screen-xl mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold text-teal-500 mb-4">
-            ¡Agenda tu cita hoy mismo!
+            ¡Agenda tu colonoscopia hoy mismo!
           </h3>
           <p className="text-xl text-teal-500 mb-8">
-            No esperes más, tu salud es lo más importante.
+            Tu salud es lo más importante. Prevenir es la mejor decisión.
           </p>
           <a
-            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" // Cambia este enlace por la ruta correcta
+            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
             className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors"
           >
             Agendar una cita

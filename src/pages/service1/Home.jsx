@@ -5,27 +5,27 @@ import { FaCheckCircle, FaQuestionCircle, FaStar, FaHeartbeat, FaUserMd } from "
 
 const ServiceDetailsAlternative = () => {
   const service = {
-    title: "Consulta Médica Personalizada",
+    title: "Endoscopia Gastrointestinal",
     description:
-      "Nuestra consulta médica se centra en brindar una atención personalizada, adaptada a tus necesidades individuales.",
+      "La endoscopia gastrointestinal es un procedimiento seguro y eficaz para diagnosticar y tratar problemas del tracto digestivo. Utilizamos tecnología avanzada para garantizar tu comodidad y precisión en los resultados.",
     features: [
-      "Evaluaciones médicas detalladas",
-      "Seguimiento continuo del paciente",
-      "Diagnóstico preciso y profesional",
+      "Evaluación completa del esófago, estómago y duodeno",
+      "Detección temprana de úlceras, pólipos y tumores",
+      "Biopsias y tratamientos mínimamente invasivos",
     ],
     benefits: [
-      "Mejor calidad de vida",
-      "Atención médica más accesible",
-      "Soluciones adaptadas",
+      "Diagnóstico preciso y rápido",
+      "Procedimiento ambulatorio y seguro",
+      "Resultados inmediatos y confiables",
     ],
     faqs: [
       {
-        question: "¿Qué incluye la consulta médica?",
-        answer: "Incluye una revisión completa y un plan de tratamiento personalizado.",
+        question: "¿Qué es una endoscopia gastrointestinal?",
+        answer: "Es un procedimiento que permite visualizar el interior del tracto digestivo superior utilizando un endoscopio, una cámara flexible con luz.",
       },
       {
-        question: "¿Necesito agendar cita previa?",
-        answer: "Sí, recomendamos agendar con anticipación para garantizar disponibilidad.",
+        question: "¿Necesito prepararme para la endoscopia?",
+        answer: "Sí, debes estar en ayunas durante al menos 8 horas antes del procedimiento. Te proporcionaremos instrucciones detalladas.",
       },
     ],
   };
@@ -127,7 +127,7 @@ const ServiceDetailsAlternative = () => {
             No esperes más, tu salud es lo más importante.
           </p>
           <a
-            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" // Cambia este enlace por la ruta correcta
+            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
             className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors"
           >
             Agendar una cita
