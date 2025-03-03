@@ -23,7 +23,7 @@ const Mockup = ({ imageUrl, title, description, buttonText }) => {
 
           {/* Imagen */}
           <div className="w-full md:w-1/2 flex justify-center">
-            <img src={imageUrl} alt="Perfil Médico" className="w-full rounded-lg shadow-lg" />
+            <img src={imageUrl} alt="Perfil Médico" className="w-full rounded-lg" />
           </div>
         </div>
       </div>
@@ -35,10 +35,10 @@ const Mockup = ({ imageUrl, title, description, buttonText }) => {
 const App = () => {
   return (
     <Mockup
-      imageUrl="/service/mockup.png"
+      imageUrl="/img/mockup.png"
       title="Descubre más sobre mi práctica en Findoctor"
       description="Consulta mi perfil digital en Findoctor para conocer detalles sobre mis servicios, ubicación, horarios y formas de contacto. Programa tu cita en línea de manera rápida y segura."
-      buttonText="Visitar mi perfil"
+      buttonText="visita mi tarjeta digital"
     />
   );
 };

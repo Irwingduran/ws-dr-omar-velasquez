@@ -54,7 +54,7 @@ export default function Footer() {
 
       {/* Divider and Copyright */}
       <div className="mt-14 border-t border-white pt-4 text-center text-white">
-        <p>Todos los derechos reservados. <br /> &copy; 2025 <a className="hover:text-yellow-500" href="https://delta-digital.com.mx/">Delta Agency.</a> </p>
+        <p>Todos los derechos reservados. <br /> &copy; 2025 Delta <a className="hover:text-yellow-500" href="https://marketingmedicos.com.mx/">by Imagen Médica.</a> </p>
       </div>
     </footer>
   );

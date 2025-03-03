@@ -9,9 +9,9 @@ import BookAnAppointment from "./BookAnAppointment";
 import LocationMap from "./LocationMap";
 import DoctorReviews from "./DoctorReviews";
 import Footer from "./Footer";
-import DoctorArticles from "./DoctorArticles";
 import AdditionalServices from "./AdditionalServices";
 import Mockup from "./Mockup"
+import Banner from "./Banner";
 
 function Home() {
   return (
@@ -52,11 +52,10 @@ function Home() {
         {/* Mapas, citas y más contenido */}
         <AdditionalServices/>
         <Mockup/>
-        <DoctorArticles />
-        <LocationMap />
         <BookAnAppointment />
+        <LocationMap />
         <DoctorReviews />
-        
+        <Banner/>
       </div>
       <div id="contact">
       <Footer />

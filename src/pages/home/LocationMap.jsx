@@ -41,21 +41,7 @@ const LocationMap = () => {
           </div>
         </div>
 
-        {/* Sección de invitación a dejar un comentario */}
-        <div className="mt-12 text-center">
-          <h3 className="text-2xl font-semibold text-gray-800">¿Te atendimos bien? ¡Déjanos tu comentario en Google!</h3>
-          <p className="text-gray-600 mt-2">
-            Tu opinión es muy valiosa para nosotros y ayuda a que más personas conozcan nuestros servicios.
-          </p>
-          <a
-            href="https://g.page/r/CODIGO_GOOGLE_REVIEW" // Reemplaza con el enlace real a las reseñas del perfil de Google
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-block  bg-teal-500 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-teal-600 transition duration-300"
-          >
-            Dejar un comentario
-          </a>
-        </div>
+  
       </div>
     </section>
   );

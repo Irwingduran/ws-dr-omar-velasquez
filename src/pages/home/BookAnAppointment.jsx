@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function BookAnAppointment() {
   return (
     <div className="mx-auto my-12 max-w-screen-xl px-6 md:my-16">
-      <div className="relative flex items-center rounded-[24px] bg-gradient-to-tl from-teal-500 to-teal-400 text-white py-8 px-6 md:py-10 md:px-12 lg:py-12 lg:px-16 overflow-hidden">
+      <div className="relative flex items-center rounded-lg bg-gradient-to-tl from-teal-500 to-teal-400 text-white py-8 px-6 md:py-10 md:px-12 lg:py-12 lg:px-16 overflow-hidden">
         {/* Contenido principal */}
         <div className="relative z-10 flex flex-col items-start md:items-center w-full text-left md:text-center space-y-4">
           <h3 className="text-2xl font-bold leading-snug md:text-3xl">

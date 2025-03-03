@@ -28,23 +28,6 @@ const ServiceDetailsAlternative = () => {
         answer: "Sí, recomendamos agendar con anticipación para garantizar disponibilidad.",
       },
     ],
-    testimonials: [
-      {
-        text: "¡Un servicio excelente! Me sentí escuchado y atendido en todo momento.",
-        author: "Carlos Rodríguez",
-        rating: 5,
-      },
-      {
-        text: "El doctor fue muy amable y profesional. Totalmente recomendado.",
-        author: "María López",
-        rating: 5,
-      },
-      {
-        text: "Sin duda, el mejor médico que he tenido. Su enfoque en el paciente y su amplio conocimiento son realmente impresionantes. Estoy muy satisfecha con los resultados y lo recomendaría a cualquiera.",
-        author: "Lucía Fernández",
-        rating: 5,
-      },
-    ],
   };
 
   return (
@@ -60,11 +43,10 @@ const ServiceDetailsAlternative = () => {
               <FaUserMd className="text-4xl text-white" />
             </div>
           </div>
-          <div>
+          <div className="relative pb-[177.78%] h-0 overflow-hidden rounded-lg shadow-lg">
             <iframe
               src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F417176356992889%2F&show_text=false&width=267&t=0"
-              width="267"
-              height="476"
+              className="absolute top-0 left-0 w-full h-full"
               style={{ border: "none", overflow: "hidden" }}
               scrolling="no"
               frameBorder="0"
@@ -135,41 +117,21 @@ const ServiceDetailsAlternative = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-screen-xl mx-auto px-4">
-          <h3 className="text-3xl font-bold text-center text-black mb-12">
-            Testimonios de Nuestros Pacientes
+      {/* Banner "Agendar una cita" */}
+      <div className="bg-white py-12">
+        <div className="max-w-screen-xl mx-auto px-4 text-center">
+          <h3 className="text-3xl font-bold text-teal-500 mb-4">
+            ¡Agenda tu cita hoy mismo!
           </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {service.testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
-              >
-                <p className="text-gray-600 italic mb-4">"{testimonial.text}"</p>
-                <div className="flex justify-between items-center">
-                  <div>
-                    <h4 className="text-lg font-semibold text-black">
-                      {testimonial.author}
-                    </h4>
-                    <div className="flex space-x-1 mt-2">
-                      {[...Array(5)].map((_, i) => (
-                        <FaStar
-                          key={i}
-                          className={`text-lg ${
-                            i < testimonial.rating
-                              ? "text-yellow-500"
-                              : "text-gray-300"
-                          }`}
-                        />
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <p className="text-xl text-teal-500 mb-8">
+            No esperes más, tu salud es lo más importante.
+          </p>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" // Cambia este enlace por la ruta correcta
+            className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors"
+          >
+            Agendar una cita
+          </a>
         </div>
       </div>
     </div>

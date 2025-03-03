@@ -2,6 +2,9 @@ import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { FaHome, FaUser, FaConciergeBell, FaEnvelope } from "react-icons/fa";
+import { MdReviews } from "react-icons/md";
+
+
 import ScrollToHash from "../../utils/ScrollToHash";
 
 export default function Navbar() {
@@ -50,6 +53,15 @@ export default function Navbar() {
             >
               <FaConciergeBell />
               Servicios
+            </a>
+          </li>
+          <li>
+            <a
+              href="/#resenas"
+              className="flex items-center gap-2 text-gray-700 hover:text-teal-500 font-medium transition-all"
+            >
+              <MdReviews />
+              Reseñas
             </a>
           </li>
           <li>
