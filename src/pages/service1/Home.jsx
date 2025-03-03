@@ -1,4 +1,7 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../home/Navbar";
 import Footer from "../home/Footer";
 import { FaCheckCircle, FaQuestionCircle, FaStar, FaHeartbeat, FaUserMd } from "react-icons/fa";
@@ -30,6 +33,26 @@ const ServiceDetailsAlternative = () => {
     ],
   };
 
+  // Configuración del carrusel
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    adaptiveHeight: true, // Ajusta la altura automáticamente según el contenido
+  };
+
+  // URLs de los videos de Facebook
+  const videos = [
+    "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1477481969435278%2F&show_text=false&width=267&t=0",
+    "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F727700085030505%2F&show_text=false&width=267&t=0",
+    "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1058373924880583%2F&show_text=false&width=267&t=0",
+  ];
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -43,16 +66,23 @@ const ServiceDetailsAlternative = () => {
               <FaUserMd className="text-4xl text-white" />
             </div>
           </div>
-          <div className="relative pb-[177.78%] h-0 overflow-hidden rounded-lg shadow-lg">
-            <iframe
-              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F417176356992889%2F&show_text=false&width=267&t=0"
-              className="absolute top-0 left-0 w-full h-full"
-              style={{ border: "none", overflow: "hidden" }}
-              scrolling="no"
-              frameBorder="0"
-              allowFullScreen={true}
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            ></iframe>
+          <div className="relative w-full max-w-md mx-auto">
+            {/* Carrusel de videos */}
+            <Slider {...settings}>
+              {videos.map((video, index) => (
+                <div key={index} className="relative pb-[133.33%] h-0 overflow-hidden rounded-lg shadow-lg">
+                  <iframe
+                    src={video}
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={{ border: "none", overflow: "hidden" }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen={true}
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  ></iframe>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
       </div>
