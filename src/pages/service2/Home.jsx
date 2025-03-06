@@ -45,17 +45,17 @@ const ServiceDetailsAlternative = () => {
               <FaUserMd className="text-4xl text-white" />
             </div>
           </div>
-          <div className="relative pb-[177.78%] md:pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-lg">
-            <iframe
-              src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F417176356992889%2F&show_text=false&width=267&t=0"
-              className="absolute top-0 left-0 w-full h-full"
-              style={{ border: "none", overflow: "hidden" }}
-              scrolling="no"
-              frameBorder="0"
-              allowFullScreen={true}
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            ></iframe>
-          </div>
+       <div className="relative w-full" style={{ paddingBottom: "177.78%" }}>
+  <iframe
+    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F417176356992889%2F&show_text=false&width=267&t=0"
+    className="absolute top-0 left-0 w-full h-full"
+    style={{ border: "none", overflow: "hidden" }}
+    scrolling="no"
+    frameBorder="0"
+    allowFullScreen={true}
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+  ></iframe>
+</div>
         </div>
       </div>
 
