@@ -48,6 +48,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/endoscopiaentoluca" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary-light transition-all">
               <FaInstagram size={24} />
             </a>
+            
           </div>
         </div>
       </div>

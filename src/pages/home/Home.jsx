@@ -54,8 +54,11 @@ function Home() {
         <Mockup/>
         <BookAnAppointment />
         <LocationMap />
-        <DoctorReviews />
-        <Banner/>
+     
+      </div>
+      <div id="resenas">
+      <DoctorReviews />
+      <Banner/>
       </div>
       <div id="contact">
       <Footer />

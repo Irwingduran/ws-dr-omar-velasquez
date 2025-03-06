@@ -10,7 +10,7 @@ const Mockup = ({ imageUrl, title, description, buttonText }) => {
             <h2 className="text-4xl font-semibold text-gray-800 mb-5">{title}</h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">{description}</p>
             <a
-              href="https://www.findoctor.com.mx/doctores/bruno-rubi-lopez"
+              href="https://www.findoctor.com.mx/doctores/omar-velasquez-martinez"
               target="_blank"
               rel="noopener noreferrer"
             >
