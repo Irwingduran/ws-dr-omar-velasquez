@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
-import imgAbout from "../../assets/img1.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 export default function About() {
   return (
@@ -9,20 +12,48 @@ export default function About() {
       <div className="max-w-screen-lg mx-auto px-6 lg:px-8 relative z-10">
         {/* Contenedor principal */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12">
-          {/* Imagen destacada */}
+          {/* Carrusel de videos */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             className="relative flex-1 max-w-md"
           >
-            <div className="relative w-full overflow-hidden rounded-lg shadow-xl">
-              <img
-                src={imgAbout}
-                alt="Doctor Velásquez Martínez"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+            <Swiper
+              pagination={{ clickable: true }}
+              modules={[Pagination]}
+              className="w-full rounded-lg "
+            >
+              <SwiperSlide>
+                <div className="relative w-full flex justify-center items-center">
+                  <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F327955279543193%2F&show_text=false&width=267&t=0"
+                    className="w-[267px] h-[476px] rounded-lg"
+                    style={{ border: "none", overflow: "hidden" }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  ></iframe>
+                </div>
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <div className="relative w-full flex justify-center items-center">
+                  <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1717911501943881%2F&show_text=false&width=267&t=0"
+                    className="w-[267px] h-[476px] rounded-lg"
+                    style={{ border: "none", overflow: "hidden" }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allowFullScreen
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  ></iframe>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+
+            {/* Efectos de fondo */}
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-300 rounded-full opacity-20 blur-3xl"></div>
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-green-300 rounded-full opacity-20 blur-3xl"></div>
           </motion.div>
