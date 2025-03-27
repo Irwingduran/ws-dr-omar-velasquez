@@ -128,7 +128,7 @@ const ServiceDetailsAlternative = () => {
         <div className="max-w-screen-xl mx-auto px-4 text-center">
           <h3 className="text-3xl font-bold text-teal-500 mb-4">¡Agenda tu cita hoy mismo!</h3>
           <p className="text-xl text-teal-500 mb-8">No esperes más, tu salud es lo más importante.</p>
-          <a href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr." className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors">
+          <a href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0" className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors">
             Agendar una cita
           </a>
         </div>
