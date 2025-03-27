@@ -10,7 +10,7 @@ export default function BookAnAppointment() {
           <h3 className="text-2xl font-bold leading-snug md:text-3xl">
             ¡Agenda tu cita ahora mismo!
           </h3>
-          <a href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+          <a href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
           target="_blank">
           <button className="flex items-center gap-3 bg-white text-teal-800 rounded-full px-5 py-2 text-sm font-medium shadow-lg hover:scale-105 transition">
             <FaWhatsapp className="text-lg" />
