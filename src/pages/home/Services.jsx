@@ -29,7 +29,7 @@ export default function Services() {
     <li>✔ Colonoscopia y endoscopia digestiva alta</li>
     <li>✔ Diagnóstico y tratamiento de enfermedades gastrointestinales</li>
   </ul>
-  <a href="https://api.whatsapp.com/send/?phone=5218180109367&text=Hola+Dr.+encontr%C3%A9+su+perfil+en+findoctor+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+  <a href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
   target="_blank">
     <Button
       title="Reserva una cita"
