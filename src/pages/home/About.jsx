@@ -71,7 +71,7 @@ export default function About() {
             <p className="text-gray-700 text-lg leading-relaxed">
               El Dr. Velásquez Martínez se graduó de la Licenciatura de Médico Cirujano y Partero en la
               Universidad de Monterrey (UDEM). Hizo la Especialidad en Cirugía General y Gastroenterológica en
-              la Universidad Autónoma de Querétaro (UAQ) y cursó una Alta Especialidad en Endoscopia
+              la Universidad Autónoma de Querétaro (UAQ) y cursó una Alta Especialidad en Endoscopía
               Gastrointestinal en la Universidad Autónoma de México (UNAM).
             </p>
           </motion.div>

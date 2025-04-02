@@ -22,14 +22,14 @@ export default function Services() {
     Servicios especializados en salud digestiva
   </h1>
   <p className="text-lg text-gray-700">
-    Con una atención médica integral y personalizada en cirugía digestiva y endoscopia gastrointestinal. Desde diagnósticos hasta tratamientos avanzados.
+    Con una atención médica integral y personalizada en cirugía digestiva y endoscopía gastrointestinal. Desde diagnósticos hasta tratamientos avanzados.
   </p>
   <ul className="text-lg text-gray-700 space-y-2">
     <li>✔ Cirugía laparoscópica y mínimamente invasiva</li>
-    <li>✔ Colonoscopia y endoscopia digestiva alta</li>
+    <li>✔ Colonoscopía y endoscopía digestiva alta</li>
     <li>✔ Diagnóstico y tratamiento de enfermedades gastrointestinales</li>
   </ul>
-  <a href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+  <a href="https://wa.me/5218180109367?text=Hola%20Dr.%20encontr%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta"
   target="_blank">
     <Button
       title="Reserva una cita"

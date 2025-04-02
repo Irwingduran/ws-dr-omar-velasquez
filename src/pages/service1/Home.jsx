@@ -157,7 +157,7 @@ const ServiceDetailsAlternative = () => {
             No esperes más, tu salud es lo más importante.
           </p>
           <a
-            href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+            href="https://wa.me/5218180109367?text=Hola%20Dr.%20encontr%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta"
             className="inline-block bg-teal-500 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-teal-300 transition-colors"
           >
             Agendar una cita

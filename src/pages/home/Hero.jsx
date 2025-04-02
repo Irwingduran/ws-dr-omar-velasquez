@@ -14,7 +14,7 @@ export default function Hero() {
           Cirujano Digestivo y Endoscopista Gastrointestinal
         </h1>
         <p className="max-w-[480px] text-gray-700 md:text-lg">
-          Cirugía General y Digestiva, Cirugía Laparoscópica, Endoscópica y de Mínima Invasión, Alta especialidad en Endoscopia Gastrointestinal
+          Cirugía General y Digestiva, Cirugía Laparoscópica, Endoscópica y de Mínima Invasión, Alta especialidad en Endoscopía Gastrointestinal
         </p> 
        
       </div>

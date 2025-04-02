@@ -23,7 +23,7 @@ export default function Banner() {
 
           {/* Botón */}
           <a
-            href="https://maps.google.com/?q=19.2554448,-99.6143056"
+            href="https://www.google.com.mx/maps/place/Dr.+Omar+Velasquez+Martinez+-+Cirujano+Digestivo+y+Endoscopista+Gastrointestinal+en+Toluca/@19.2548485,-99.6179717,17z/data=!4m15!1m8!3m7!1s0x85cd8b040a61fb93:0x662ccaf49f23bbe1!2sDr.+Omar+Velasquez+Martinez+-+Cirujano+Digestivo+y+Endoscopista+Gastrointestinal+en+Toluca!8m2!3d19.2548485!4d-99.6153968!10e1!16s%2Fg%2F11whpjmtjd!3m5!1s0x85cd8b040a61fb93:0x662ccaf49f23bbe1!8m2!3d19.2548485!4d-99.6153968!16s%2Fg%2F11whpjmtjd?hl=es&entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
             target="_blank"
           >
             <button className="flex items-center bg-white text-black font-semibold text-lg py-3 px-8 rounded-full shadow-md  transition-transform transform hover:scale-105">

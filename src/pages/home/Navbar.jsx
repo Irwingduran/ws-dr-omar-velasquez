@@ -75,7 +75,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+              href="https://wa.me/5218180109367?text=Hola%20Dr.%20encontr%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta"
               className="px-4 py-2 bg-teal-500 text-white rounded-full shadow-md hover:bg-teal-600 transition-all"
               target="_blank"
             >
@@ -155,7 +155,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a
-                  href="https://api.whatsapp.com/send/?phone=5212224809611&text=Hola+Dr.+encontr%C3%A9+su+sitio+web+y+me+gustar%C3%ADa+realizar+una+consulta&type=phone_number&app_absent=0"
+                  href="https://wa.me/5218180109367?text=Hola%20Dr.%20encontr%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20realizar%20una%20consulta"
                   className="px-4 py-2 bg-teal-500 text-white rounded-full shadow-md hover:bg-teal-600 transition-all"
                   onClick={() => setIsOpen(false)}
                   target="_blank"
