@@ -2,10 +2,10 @@ import React from "react";
 
 export default function AdditionalServices() {
     const services = [
-        "Endoscopia Gastrointestinal",
+        "Endoscopía Gastrointestinal",
         "Laparoscopia Digestiva",
         "Cirugía Digestiva",
-        "Colonoscopia",
+        "Colonoscopía",
         "Colangiografía Endoscópica",
         "Cirugía Laparoscópica y Digestiva",
         "Gastritis",
