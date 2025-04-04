@@ -23,7 +23,7 @@ const ServiceCard = ({ title, imgSrc, description, link }) => {
 export default function ServiceCards() {
   const services = [
     {
-      title: "Endoscopia Gastrointestinal",
+      title: "Endoscopía Gastrointestinal",
       imgSrc: "img/service1.jpeg",
       description: "Exploración no invasiva para evaluar el sistema digestivo.",
       link: "/Service1",
@@ -35,7 +35,7 @@ export default function ServiceCards() {
       link: "/Service2",
     },
     {
-      title: "Colonoscopia",
+      title: "Colonoscopía",
       imgSrc: "img/service4.jpeg",
       description: "Prueba de diagnóstico para examinar el colon y recto.",
       link: "/Service3",
